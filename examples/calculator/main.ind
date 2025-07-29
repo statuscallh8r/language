@@ -1,0 +1,29 @@
+local a
+	int 10
+
+local b  
+	int 5
+
+print
+	concat
+		string "First number: "
+		a a
+
+print
+	concat
+		string "Second number: "
+		a b
+
+local sum
+	add
+		a a
+		a b
+
+print
+	concat
+		string "Sum: "
+		a a
+		string " + "
+		a b
+		string " = "
+		a sum

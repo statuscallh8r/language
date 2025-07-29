@@ -1,0 +1,5 @@
+# No external Python dependencies required
+# This file is provided for consistency and future dependency tracking
+# The indentifire compiler uses only Python standard library modules
+
+# Minimum Python version: 3.9 (for type annotations and pathlib features)

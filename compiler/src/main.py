@@ -50,10 +50,19 @@ except Exception as e:
     crash = ''.join(traceback.format_exception(*exc_info))
 
 if compiled:
+    # Ensure the output directory exists
+    Path(args.output_file).parent.mkdir(parents=True, exist_ok=True)
     with open(args.output_file, "w") as f:
         f.write(compiled)
+else:
+    print("No compiled output generated")
+
 expanded_file = Path(args.output_file).parent / ".ind.expanded"
 print(f"expanded into {expanded_file}")
+
+# Ensure the directory exists before writing
+expanded_file.parent.mkdir(parents=True, exist_ok=True)
+
 with open(expanded_file, "w") as f:
     for node in compiler.nodes:
         f.write(repr(node))

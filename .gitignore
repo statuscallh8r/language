@@ -9,3 +9,7 @@ fucking_around_with_bash/output.txt
 !.vscode/launch.json
 
 .deno
+
+# Generated files
+*.js
+.ind.expanded

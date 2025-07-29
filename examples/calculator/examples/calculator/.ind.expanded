@@ -1,0 +1,61 @@
+PIL:file
+	local a
+		int 10
+
+	local b  
+		int 5
+
+	print
+		concat
+			string "First number: "
+
+			local _0x0__a
+				PIL:access_local a
+
+				PIL:auto_type
+
+	print
+		concat
+			string "Second number: "
+
+			local _0x1__b
+				PIL:access_local b
+
+				PIL:auto_type
+
+	local sum
+		add
+			local _0x2__a
+				PIL:access_local a
+
+				PIL:auto_type
+
+			local _0x3__b
+				PIL:access_local b
+
+				PIL:auto_type
+
+	print
+		concat
+			string "Sum: "
+
+			local _0x4__a
+				PIL:access_local a
+
+				PIL:auto_type
+
+			string " + "
+
+			local _0x5__b
+				PIL:access_local b
+
+				PIL:auto_type
+
+			string " = "
+
+			local _0x6__sum
+				PIL:access_local sum
+
+				PIL:auto_type
+
+

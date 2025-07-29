@@ -1,0 +1,27 @@
+local input
+	stdin
+
+local words
+	an input split
+		string "\n"
+
+local count
+	dict
+
+for word in
+	access words
+do
+	a count key
+		substituting key
+			a word
+		add
+			int 1
+			a count key
+				substituting key
+					a word
+
+print
+	a count
+
+
+

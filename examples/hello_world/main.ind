@@ -1,0 +1,9 @@
+do
+	print
+		string "Hello, World!"
+		
+	print
+		string "Welcome to Indentifire!"
+
+	print
+		string "This language uses semantic indentation like Python!"
