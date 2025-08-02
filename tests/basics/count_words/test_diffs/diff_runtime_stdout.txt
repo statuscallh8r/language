@@ -1,1 +1,0 @@
---- expected_runtime_stdout+++ actual_runtime_stdout@@ -1 +0,0 @@-{ apple: 4, pear: 2, banana: 3 }

@@ -1,2 +1,0 @@
---- expected_runtime_stdout+++ actual_runtime_stdout@@ -1,2 +0,0 @@-[ "", "es", "ing" ]
--[ "", "es", "ing" ]

@@ -1,5 +1,0 @@
---- expected_runtime_stdout+++ actual_runtime_stdout@@ -1,5 +0,0 @@-Alice
--Bob
--Charlie
--Dora
--2

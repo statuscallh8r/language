@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+"""
+pre-commit hook to automatically run tests and include valuable test artifacts.
+mentioned in issue #15: "add a commit hook that would automatically run ./test 
+and include all the valuable test artifacts into the commit"
+
+install with: ln -s ../../git-hooks/pre-commit .git/hooks/pre-commit
+"""
+
+import subprocess
+import sys
+from pathlib import Path
+
+def run_command(cmd, cwd=None):
+    """run a command and return returncode, stdout, stderr"""
+    result = subprocess.run(cmd, capture_output=True, text=True, cwd=cwd)
+    return result.returncode, result.stdout, result.stderr
+
+def main():
+    repo_root = Path(__file__).parent.parent
+    
+    print("running tests before commit...")
+    
+    # run tests with compilation only (faster)
+    returncode, stdout, stderr = run_command(
+        ["python3", "test", "--compile"],
+        cwd=repo_root
+    )
+    
+    if returncode != 0:
+        print("tests failed - commit aborted")
+        print(stderr)
+        return 1
+    
+    print("tests passed, adding valuable test artifacts...")
+    
+    # add all valuable test artifacts
+    valuable_patterns = [
+        "tests/*/.67lang.expanded",
+        "tests/*/*/.67lang.expanded", 
+        "tests/*/out.js",
+        "tests/*/*/out.js",
+        "tests/*/success.stdout",
+        "tests/*/*/success.stdout",
+        "tests/*/runtime.stderr", 
+        "tests/*/*/runtime.stderr",
+        "tests/*/compile.stderr",
+        "tests/*/*/compile.stderr",
+    ]
+    
+    for pattern in valuable_patterns:
+        returncode, stdout, stderr = run_command(
+            ["git", "add"] + list(repo_root.glob(pattern)),
+            cwd=repo_root
+        )
+        # ignore errors - files may not exist
+    
+    print("valuable test artifacts added to commit")
+    return 0
+
+if __name__ == "__main__":
+    sys.exit(main())

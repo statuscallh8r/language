@@ -9,3 +9,16 @@ fucking_around_with_bash/output.txt
 !.vscode/launch.json
 
 .deno
+
+# test artifacts - temporary files that should not be tracked
+test_diffs/
+*.actual
+*.tmp
+
+# test artifacts - valuable files that SHOULD be tracked for history
+# (these are explicitly listed to make intent clear)
+# .67lang.expanded files (macro expansion history)
+# out.js files (JS emission history) 
+# success.stdout, runtime.stderr files (test behavior history)
+# main.67lang files (source code)
+# tests.json, stdin files (test configuration)

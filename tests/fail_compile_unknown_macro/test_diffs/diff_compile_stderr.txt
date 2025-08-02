@@ -1,2 +1,0 @@
---- expected_compile_stderr+++ actual_compile_stderr@@ -1,2 +0,0 @@-INVALID_MACRO ERROR at line 1, col 1: unknown macro 'definitely_not_a_real_macro_name' - is this supposed to exist? did you maybe typo something?
--COMPILATION FAILED: 1 errors found.
