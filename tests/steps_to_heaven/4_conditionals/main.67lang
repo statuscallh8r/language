@@ -1,0 +1,32 @@
+local age
+	int 25
+
+if
+	asc
+		int 18
+		an age
+then
+	print
+		string "Adult"
+
+if
+	eq
+		an age
+		int 25
+then
+	print
+		string "Quarter century"
+
+local name
+	string "Alice"
+
+if
+	eq
+		an name
+		string "Alice"
+then
+	print
+		string "Hello Alice!"
+else
+	print
+		string "Hello stranger!"

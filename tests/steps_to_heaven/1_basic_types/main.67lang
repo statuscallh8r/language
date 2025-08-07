@@ -1,0 +1,11 @@
+print
+	string "hello world"
+
+print
+	int 42
+
+print
+	true
+
+print
+	false

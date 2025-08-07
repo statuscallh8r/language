@@ -1,0 +1,17 @@
+note Basic comments are an essential feature for documentation
+
+print
+	string "Code with comments"
+
+note Comments can span multiple lines
+	and provide detailed explanations
+	about what the code does
+
+local message
+	string "documented"
+
+note Comments help make code readable and maintainable
+
+print
+	string "Message:"
+	an message

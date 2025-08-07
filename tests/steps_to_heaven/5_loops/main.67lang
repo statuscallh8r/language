@@ -1,0 +1,24 @@
+local numbers
+	list
+		int 1
+		int 2
+		int 3
+
+for num in
+	access numbers
+do
+	print
+		string "Number:"
+		an num
+
+local names
+	list
+		string "Alice"
+		string "Bob"
+
+for name in
+	access names
+do
+	print
+		string "Hello"
+		an name

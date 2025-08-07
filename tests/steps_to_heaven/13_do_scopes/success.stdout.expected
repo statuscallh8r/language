@@ -1,0 +1,4 @@
+Before do block: global outer
+Inside do block: global scoped inner
+After modification in do block: modified_inner
+After do block: global outer

@@ -1,0 +1,47 @@
+local a
+	int 5
+
+local b
+	int 10
+
+local name1
+	string "Alice"
+
+local name2
+	string "Bob"
+
+print
+	string "Equal integers:"
+	eq
+		an a
+		int 5
+
+print
+	string "Not equal integers:"
+	eq
+		an a
+		an b
+
+print
+	string "Ascending order:"
+	asc
+		an a
+		an b
+
+print
+	string "Descending order:"
+	asc
+		an b
+		an a
+
+print
+	string "String equality:"
+	eq
+		an name1
+		string "Alice"
+
+print
+	string "String comparison:"
+	asc
+		an name1
+		an name2

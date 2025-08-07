@@ -1,0 +1,20 @@
+local name
+	string "Alice"
+
+local age
+	int 25
+
+local active
+	true
+
+print
+	string "Name:"
+	an name
+
+print
+	string "Age:"
+	an age
+
+print
+	string "Active:"
+	an active

@@ -1,0 +1,31 @@
+local pi
+	float 3.14159
+
+local temperature
+	float -273.15
+
+local percentage
+	float 67.8
+
+print
+	string "Pi:"
+	an pi
+
+print
+	string "Absolute zero:"
+	an temperature
+
+print
+	string "Project completion:"
+	an percentage
+	string "%"
+
+local sum_floats
+	add
+		an pi
+		an temperature
+		an percentage
+
+print
+	string "Sum of floats:"
+	an sum_floats

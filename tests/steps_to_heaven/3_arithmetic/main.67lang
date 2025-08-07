@@ -1,0 +1,27 @@
+print
+	string "Addition:"
+	add
+		int 10
+		int 5
+
+print
+	string "More addition:"
+	add
+		int 2
+		int 3
+		int 4
+
+print
+	string "Modulo:"
+	mod
+		int 17
+		int 5
+
+local result
+	add
+		int 1
+		int 2
+
+print
+	string "Stored result:"
+	an result

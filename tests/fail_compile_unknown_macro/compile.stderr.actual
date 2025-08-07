@@ -1,10 +1,5 @@
 [
   {
-    "recoverable": false,
-    "line": 2,
-    "char": 0,
-    "content": "definitely_not_a_real_macro_name",
-    "error": "unknown macro 'definitely_not_a_real_macro_name' - is this supposed to exist? did you maybe typo something?",
-    "error_type": "INVALID_MACRO"
+    "message": "Error at line 2: unknown macro or unhandled node: 'definitely_not_a_real_macro_name' in 'definitely_not_a_real_macro_name'"
   }
 ]

@@ -1,0 +1,70 @@
+{
+  "simple_print": {
+    "content": "67lang:file",
+    "line": 0,
+    "children": [
+      {
+        "content": "print",
+        "line": 2,
+        "children": [
+          {
+            "content": "string \"hello\"",
+            "line": 3,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "nested_structure": {
+    "content": "67lang:file",
+    "line": 0,
+    "children": [
+      {
+        "content": "outer",
+        "line": 2,
+        "children": [
+          {
+            "content": "middle",
+            "line": 3,
+            "children": [
+              {
+                "content": "inner",
+                "line": 4,
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "function_definition": {
+    "content": "67lang:file",
+    "line": 0,
+    "children": [
+      {
+        "content": "fn test",
+        "line": 2,
+        "children": [
+          {
+            "content": "param x",
+            "line": 3,
+            "children": []
+          },
+          {
+            "content": "do",
+            "line": 4,
+            "children": [
+              {
+                "content": "return x",
+                "line": 5,
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

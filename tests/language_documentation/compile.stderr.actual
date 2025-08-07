@@ -1,0 +1,44 @@
+[
+  {
+    "message": "Error at line 53: unknown macro or unhandled node: '#' in '# TODO - assert instead of printing (need a new macro)'"
+  },
+  {
+    "message": "Error at line 59: unknown macro or unhandled node: 'concat' in 'concat'"
+  },
+  {
+    "message": "Error at line 64: unknown macro or unhandled node: 'concat' in 'concat'"
+  },
+  {
+    "message": "Error at line 70: unknown macro or unhandled node: 'concat' in 'concat'"
+  },
+  {
+    "message": "Error at line 97: comparison operation needs exactly 2 operands"
+  },
+  {
+    "message": "Error at line 156: unknown macro or unhandled node: 'regex' in 'regex /(2347)/'"
+  },
+  {
+    "message": "Error at line 237: access operation has too many arguments: a 67lang.features described slice join"
+  },
+  {
+    "message": "Error at line 294: unknown macro or unhandled node: 'concat' in 'concat'"
+  },
+  {
+    "message": "Error at line 302: unknown macro or unhandled node: '#' in '# TODO update this once 67lang is production grade (give it two three months...)'"
+  },
+  {
+    "message": "Error at line 392: unknown macro or unhandled node: 'type' in 'type int'"
+  },
+  {
+    "message": "Error at line 396: unknown macro or unhandled node: 'type' in 'type str'"
+  },
+  {
+    "message": "Error at line 399: unknown macro or unhandled node: 'must_compile_error' in 'must_compile_error FIELD_TYPE_MISMATCH=+1'"
+  },
+  {
+    "message": "Error at line 406: unknown macro or unhandled node: 'must_compile_error' in 'must_compile_error ARGUMENT_TYPE_MISMATCH=+1'"
+  },
+  {
+    "message": "Error at line 409: unknown macro or unhandled node: 'must_compile_error' in 'must_compile_error FIELD_TYPE_MISMATCH=+1'"
+  }
+]

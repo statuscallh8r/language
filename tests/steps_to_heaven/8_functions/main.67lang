@@ -1,0 +1,25 @@
+fn say_hello
+	param name
+	param unused
+do
+	print
+		string "Hello "
+		an name
+
+fn print_sum
+	param a
+	param b
+do
+	print
+		string "Sum: "
+		add
+			an a
+			an b
+
+a say_hello
+	string "Alice"
+	string "dummy"
+
+a print_sum
+	int 5
+	int 3

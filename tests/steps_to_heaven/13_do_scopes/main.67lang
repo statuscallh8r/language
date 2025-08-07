@@ -1,0 +1,35 @@
+local global_var
+	string "global"
+
+local shadow_var
+	string "outer"
+
+print
+	string "Before do block:"
+	an global_var
+	an shadow_var
+
+do
+	local scoped_var
+		string "scoped"
+	
+	local shadow_var
+		string "inner"
+	
+	print
+		string "Inside do block:"
+		an global_var
+		an scoped_var
+		an shadow_var
+	
+	access shadow_var
+		string "modified_inner"
+	
+	print
+		string "After modification in do block:"
+		an shadow_var
+
+print
+	string "After do block:"
+	an global_var
+	an shadow_var

@@ -1,0 +1,24 @@
+print
+	string "All true?"
+	all
+		true
+		false
+		true
+
+print
+	string "Any true?"
+	any
+		true
+		false
+		true
+
+print
+	string "None true?"
+	none
+		true
+		false
+		true
+
+print
+	string "All in empty list?"
+	all

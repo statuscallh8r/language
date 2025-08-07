@@ -1,0 +1,30 @@
+local fruits
+	list
+		string "apple"
+		string "banana"
+		string "cherry"
+
+print
+	string "First fruit:"
+	a fruits key
+		where key is
+			int 0
+
+local scores
+	dict
+
+a scores key
+	where key is
+		string "Alice"
+	int 95
+
+a scores key
+	where key is
+		string "Bob"
+	int 87
+
+print
+	string "Alice's score:"
+	a scores key
+		where key is
+			string "Alice"

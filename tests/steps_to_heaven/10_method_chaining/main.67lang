@@ -1,0 +1,16 @@
+local phrase
+	string "hello world testing"
+
+print
+	string "Original: "
+	an phrase
+
+local sorted_words
+	a phrase split sort join
+		where split takes
+			string " "
+		string " "
+
+print
+	string "Sorted: "
+	an sorted_words

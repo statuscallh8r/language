@@ -1,0 +1,26 @@
+local text
+	string "hello world example"
+
+local words
+	an text split
+		string " "
+
+print
+	string "First word:"
+	a words key
+		where key is
+			int 0
+
+print
+	string "Last word:"
+	a words key
+		where key is
+			int 2
+
+local joined
+	a words join
+		string "-"
+
+print
+	string "Joined:"
+	an joined

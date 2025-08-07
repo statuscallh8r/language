@@ -52,14 +52,18 @@ with default_logger.indent("compile", "initialization"):
     its_just_macros = Macrocosm()
     
     # Log macro registry summary if registry logging is enabled
-    from processor_base import unified_macros, unified_typecheck
-    from preprocessing_macros import preprocessor
-    codegen_macros = ", ".join(unified_macros.all().keys())
-    typecheck_macros = ", ".join(unified_typecheck.all().keys())
-    preprocessor_macros = ", ".join(preprocessor.all().keys())
-    default_logger.registry(f"macro registry initialized with codegen macros: {codegen_macros}")
-    default_logger.registry(f"typecheck registry initialized with typecheck macros: {typecheck_macros}")  
-    default_logger.registry(f"preprocessor registry initialized with preprocessor macros: {preprocessor_macros}")
+    # NOTE: Temporarily disabled during Step 4 refactor
+    # from processor_base import unified_macros, unified_typecheck
+    # from preprocessing_macros import preprocessor
+    # codegen_macros = ", ".join(unified_macros.all().keys())
+    # typecheck_macros = ", ".join(unified_typecheck.all().keys())
+    # preprocessor_macros = ", ".join(preprocessor.all().keys())
+    # default_logger.registry(f"macro registry initialized with codegen macros: {codegen_macros}")
+    # default_logger.registry(f"typecheck registry initialized with typecheck macros: {typecheck_macros}")  
+    # default_logger.registry(f"preprocessor registry initialized with preprocessor macros: {preprocessor_macros}")
+    # Show meaningful handler names instead of count
+    handler_names = list(its_just_macros.macro_handlers.keys())
+    default_logger.registry(f"new compiler architecture initialized with handlers: {', '.join(sorted(handler_names))}")
 
 parser = TreeParser()
 with default_logger.indent("compile", "parsing files"):

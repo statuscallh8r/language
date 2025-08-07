@@ -1,0 +1,16 @@
+local count
+	int 0
+
+while
+	asc
+		an count
+		int 5
+do
+	print
+		string "Count: "
+		an count
+	
+	access count
+		add
+			an count
+			int 1

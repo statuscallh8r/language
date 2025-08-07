@@ -1,0 +1,25 @@
+local fruits
+	list
+		string "apple"
+		string "banana"
+		string "cherry"
+
+print
+	string "Using a fruits 0:"
+	a fruits 0
+
+print
+	string "Using key syntax:"
+	a fruits key
+		where key is
+			int 0
+
+local numbers
+	list
+		int 10
+		int 20
+		int 30
+
+print
+	string "Second number:"
+	a numbers 1

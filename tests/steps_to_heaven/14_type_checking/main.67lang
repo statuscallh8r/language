@@ -1,0 +1,32 @@
+local simple_int
+	int 42
+
+local simple_str
+	string "hello"
+
+local simple_bool
+	true
+
+print
+	string "Integer:"
+	an simple_int
+
+print
+	string "String:"
+	an simple_str
+
+print
+	string "Boolean:"
+	an simple_bool
+
+access simple_int
+	add
+		an simple_int
+		int 8
+
+print
+	string "Modified integer:"
+	an simple_int
+
+note Type checking is a work in progress feature
+note This test demonstrates basic variable usage without type annotations
