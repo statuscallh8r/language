@@ -3,7 +3,8 @@ from processor_base import seek_child_macro, unified_macros
 from macro_registry import MacroContext
 from strutil import IndentedStringIO
 
-@unified_macros.add("while")
+# TODO: Import-time registration removed - now handled by dependency injection in Macrocosm
+# @unified_macros.add("while")
 def while_loop(ctx: MacroContext):
     ctx.statement_out.write("while(true) {")
     with ctx.statement_out:

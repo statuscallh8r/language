@@ -6,7 +6,9 @@ from node import Args
 # Legacy registries - will be moved into steps
 macros = unified_macros  # Use unified registry
 typecheck = unified_typecheck  # Use unified registry
-@macros.add("int")
+
+# TODO: Import-time registration removed - now handled by dependency injection in Macrocosm
+# @macros.add("int")
 def int_macro(ctx: MacroContext):
     args = ctx.compiler.get_metadata(ctx.node, Args)
     try:
@@ -15,11 +17,11 @@ def int_macro(ctx: MacroContext):
         ctx.compiler.assert_(False, f"{args} must be a valid integer string.", ErrorType.INVALID_INT)
     ctx.expression_out.write(str(args))
 
-@typecheck.add("int")
+# @typecheck.add("int")
 def int_typecheck(ctx: MacroContext):
     return "int"
 
-@macros.add("float")
+# @macros.add("float")
 def float_macro(ctx: MacroContext):
     args = ctx.compiler.get_metadata(ctx.node, Args)
     try:
@@ -28,11 +30,11 @@ def float_macro(ctx: MacroContext):
         ctx.compiler.assert_(False, f"{args} must be a valid float string.", ErrorType.INVALID_FLOAT)
     ctx.expression_out.write(str(args))
 
-@typecheck.add("float")
+# @typecheck.add("float")
 def int_typecheck(ctx: MacroContext):
     return "float"
 
-@macros.add("string", "regex")
+# @macros.add("string", "regex")
 def str_macro(ctx: MacroContext):
     s: str = ctx.compiler.get_metadata(ctx.node, Args)
     if len(s) == 0:
@@ -53,11 +55,11 @@ def str_macro(ctx: MacroContext):
     sep = '"' if macro == "string" else "/"
     ctx.expression_out.write(f'{sep}{s}{sep}')
 
-@typecheck.add("string")
+# @typecheck.add("string")
 def str_typecheck(ctx: MacroContext):
     return "str"
 
-@typecheck.add("regex")
+# @typecheck.add("regex")
 def regex_typecheck(ctx: MacroContext):
     return "regex"
 
@@ -71,7 +73,7 @@ literally = {
     "return": "return"
 }
 
-@macros.add(*[k for k in literally.keys()])
+# @macros.add(*[k for k in literally.keys()])
 def literally_macro(ctx: MacroContext):
     # TODO. this isn't inherently expression_out... indeed most of these should be statement_out...
     from node import Macro

@@ -3,7 +3,8 @@ from processor_base import unified_macros
 from macro_registry import MacroContext
 from strutil import IndentedStringIO
 
-@unified_macros.add("noscope")
+# TODO: Import-time registration removed - now handled by dependency injection in Macrocosm
+# @unified_macros.add("noscope")
 def block(ctx: MacroContext):
     for child in ctx.node.children:
         out = IndentedStringIO()

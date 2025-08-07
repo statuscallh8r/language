@@ -1,0 +1,42 @@
+[
+  {
+    "recoverable": false,
+    "line": 5,
+    "char": 0,
+    "content": "67lang:access_local lines",
+    "error": "failed to assert: single child used for assignment",
+    "error_type": "ASSERTION_FAILED"
+  },
+  {
+    "recoverable": false,
+    "line": 22,
+    "char": 0,
+    "content": "67lang:access_field _0x10_module id",
+    "error": "failed to assert: single child node for assignment",
+    "error_type": "ASSERTION_FAILED"
+  },
+  {
+    "recoverable": false,
+    "line": 25,
+    "char": 0,
+    "content": "67lang:access_field _0x19_module deps",
+    "error": "failed to assert: single child node for assignment",
+    "error_type": "ASSERTION_FAILED"
+  },
+  {
+    "recoverable": false,
+    "line": 38,
+    "char": 0,
+    "content": "67lang:access_index _0x27_modules",
+    "error": "failed to assert: second child used for assignment",
+    "error_type": "ASSERTION_FAILED"
+  },
+  {
+    "recoverable": false,
+    "line": 75,
+    "char": 0,
+    "content": "for dep_id in",
+    "error": "failed to assert: must have a single argument, the list provider (got ['_0x3f__0x3d_module', '_0x40__0x3e_deps'])",
+    "error_type": "WRONG_ARG_COUNT"
+  }
+]

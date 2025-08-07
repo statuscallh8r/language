@@ -155,13 +155,13 @@ void (async () => {
                     {
                         const scope = _67lang.scope(parent_scope)
                         let _0xc_count = _0x4_count
-
+                        _0xc_count
                         let _0xe__0x7_word = word
                         let _0xf__0x9_count = _0x4_count
                         let _0x10__0x8_word = word
                         const _0x17__0xf__0x9_count = await _0xf__0x9_count[_0x10__0x8_word]
                         let _0x11__0xa_key = _0x17__0xf__0x9_count
-                        const _0x18_await__67lang_dot_add_lp_ = await _67lang.add(1, _0x11__0xa_key)
+                        const _0x18_await__67lang_dot_add_lp_ = await _67lang.add(1, _0xf__0x9_count, _0x11__0xa_key)
                         _0xc_count[_0xe__0x7_word] = _0x18_await__67lang_dot_add_lp_
                         const _0x16__0xc_count = await _0xc_count[_0xe__0x7_word]
                         let _0xd_key = _0x16__0xc_count

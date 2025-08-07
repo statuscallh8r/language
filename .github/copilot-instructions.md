@@ -22,3 +22,5 @@ the compiler is written in Python currently, though a bootstrap is already plann
 leverage the `for_developers.md` religiously. inspect it before you start the work to know what this project is all about. inspect it before you start implementing a solution to validate that the solution is acceptable and save us the back and forth of six PR reviews. **build quality software.**
 
 **do not track PR comments via line numbers!** track them via the lines (or the summary of lines) that they comment upon. this happens far too often - you lose track of which lines the comment is actually discussing because you edited the file and the line numbers shifted. incredibly frustrating!
+
+**do not break tests!** the code here is sufficiently nonstandard and complex to strain your reasoning to the point i highly doubt you'd find a way to fix them afterwards. instead, **apply small, incremental changes**, ensuring `./test`, and exactly that command written exactly in that way, still passes.

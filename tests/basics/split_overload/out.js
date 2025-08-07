@@ -139,13 +139,13 @@ void (async () => {
             let _0x1_str = _0x0_str
             const _0x5_split = await String.prototype.split.call(_0x1_str, "t")
             let _0x2_split = _0x5_split
-            const _0x6_await__67lang_dot_log_lp_ = await _67lang.log(_0x2_split)
+            const _0x6_await__67lang_dot_log_lp_ = await _67lang.log(_0x1_str, _0x2_split)
             _0x6_await__67lang_dot_log_lp_
 
             let _0x3_str = _0x0_str
             const _0x7_split = await String.prototype.split.call(_0x3_str, /t/)
             let _0x4_split = _0x7_split
-            const _0x8_await__67lang_dot_log_lp_ = await _67lang.log(_0x4_split)
+            const _0x8_await__67lang_dot_log_lp_ = await _67lang.log(_0x3_str, _0x4_split)
             _0x8_await__67lang_dot_log_lp_
         }
     } 

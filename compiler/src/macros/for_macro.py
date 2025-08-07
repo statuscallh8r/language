@@ -1,10 +1,13 @@
 from dataclasses import replace
 from processor_base import seek_child_macro, unified_macros
-from macro_registry import MacroContext
+from macro_registry import MacroContext, MacroRegistry
 from strutil import IndentedStringIO
 from error_types import ErrorType
+from node import Args, Node
 
-@unified_macros.add("for")
+# JavaScript emission for 'for' macro
+# TODO: Import-time registration removed - now handled by dependency injection in Macrocosm
+# @unified_macros.add("for")
 def for_macro(ctx: MacroContext):
     split = ctx.node.content.split(" ")
     ctx.compiler.assert_(len(split) == 3, ctx.node, "must have a syntax: for $ident in")
@@ -37,3 +40,19 @@ while (true) {{
         inner_ctx = replace(ctx, node=node)
         ctx.current_step.process_node(inner_ctx)
     ctx.statement_out.write("}")
+
+# Preprocessing for 'for' macro
+def for_preprocessing(ctx: MacroContext):
+    """Preprocessing logic for 'for' macro - adds local variable assumption"""
+    # TODO. yes i really do hate this hack. really what we should just do is unroll `for` into the
+    #  manual while true early into the processing
+    args = ctx.compiler.get_metadata(ctx.node, Args)
+    args = args.split(" ")
+    name = args[0] # TODO - this won't support any identifier, it probably should!
+
+    # print("processing", ctx.node.content, "with children", [c.content for c in ctx.node.children])
+    ctx.node.prepend_child(Node(f"67lang:assume_local_exists {name}", pos=ctx.node.pos, children=[]))
+    # print("done processing", ctx.node.content, "with children", [c.content for c in ctx.node.children])
+
+    for child in ctx.node.children:
+        ctx.current_step.process_node(replace(ctx, node=child))

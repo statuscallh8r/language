@@ -1,0 +1,26 @@
+[
+  {
+    "recoverable": false,
+    "line": 14,
+    "char": 0,
+    "content": "67lang:access_local lines",
+    "error": "failed to assert: single child used for assignment",
+    "error_type": "ASSERTION_FAILED"
+  },
+  {
+    "recoverable": false,
+    "line": 32,
+    "char": 0,
+    "content": "67lang:access_local header",
+    "error": "failed to assert: single child used for assignment",
+    "error_type": "ASSERTION_FAILED"
+  },
+  {
+    "recoverable": false,
+    "line": 48,
+    "char": 0,
+    "content": "67lang:access_index _0x1c_row",
+    "error": "failed to assert: second child used for assignment",
+    "error_type": "ASSERTION_FAILED"
+  }
+]

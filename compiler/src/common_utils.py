@@ -48,7 +48,7 @@ def collect_child_types(ctx: MacroContext) -> List[str]:
     Returns:
         list of type strings from children
     """
-    from typecheck_macros import TypeCheckingStep
+    from steps.typecheck_step import TypeCheckingStep
     
     assert isinstance(ctx.current_step, TypeCheckingStep), "collect_child_types called outside TypeCheckingStep"
         

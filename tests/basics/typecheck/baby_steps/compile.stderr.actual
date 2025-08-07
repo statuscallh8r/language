@@ -70,5 +70,13 @@
     "content": "67lang:call split",
     "error": "failed to assert: argument demands str and is given list",
     "error_type": "ARGUMENT_TYPE_MISMATCH"
+  },
+  {
+    "recoverable": false,
+    "line": 49,
+    "char": 0,
+    "content": "67lang:access_local test_bool",
+    "error": "failed to assert: single child used for assignment",
+    "error_type": "ASSERTION_FAILED"
   }
 ]

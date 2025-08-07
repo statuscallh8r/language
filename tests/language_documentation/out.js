@@ -221,21 +221,21 @@ void (async () => {
             let _0x16_sort = _0x65_sort
             const _0x66_join = await Array.prototype.join.call(_0x16_sort, ", ")
             let _0x17_join = _0x66_join
-            const _0x67_await__67lang_dot_log_lp_ = await _67lang.log(_0x17_join)
+            const _0x67_await__67lang_dot_log_lp_ = await _67lang.log(_0x14__2347_0x15_split_0x16_sort, _0x17_join)
             _0x67_await__67lang_dot_log_lp_
 
 
             let _0x18__67lang_dot_features = {}
             _0x18__67lang_dot_features
             let _0x23__67lang_dot_features = _0x18__67lang_dot_features
-
+            _0x23__67lang_dot_features
             _0x23__67lang_dot_features["the access macro"] = "noscope\nlocal _0x22_branching\neliminating the pain of using brackets and having to erase or insert the bracket\nat the beginning and then at the end inherently by being part of 67lang\nwhere indentation rules all."
             const _0x68__0x23__67lang_dot_features = await _0x23__67lang_dot_features["the access macro"]
             let _0x24_name = _0x68__0x23__67lang_dot_features
             _0x24_name
 
             let _0x2f__67lang_dot_features = _0x18__67lang_dot_features
-
+            _0x2f__67lang_dot_features
             _0x2f__67lang_dot_features["the flexibility of identifiers"] = "anything can be an identifier. there is only whitespace and non whitespace. this \nfrees programmers to express their ideas in a truly direct and unleashed way.\nif you desire to have a variable named `$`, `,`, `?`, or even `true`, we are\nnot here to stop you. if you are stupid, you will certainly misuse this and obliterate\nyour foot. if you are smart, you will write the most readable code ever written."
             const _0x69__0x2f__67lang_dot_features = await _0x2f__67lang_dot_features["the flexibility of identifiers"]
             let _0x30_added = _0x69__0x2f__67lang_dot_features
@@ -248,7 +248,7 @@ void (async () => {
             let _0x33_slice = _0x6b_slice
             const _0x6c_join = await Array.prototype.join.call(_0x33_slice, "")
             let _0x34_join = _0x6c_join
-            const _0x6d_await__67lang_dot_log_lp_ = await _67lang.log(_0x34_join)
+            const _0x6d_await__67lang_dot_log_lp_ = await _67lang.log(_0x31__67lang_dot_features_0x32_described_0x33_slice, _0x34_join)
             _0x6d_await__67lang_dot_log_lp_
 
 
